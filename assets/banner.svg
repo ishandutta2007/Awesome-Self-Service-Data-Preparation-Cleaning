@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Linear Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="accentEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <radialGradient id="glowGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid Filter -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      .bg-glow {
+        animation: pulseGlow 8s ease-in-out infinite alternate;
+      }
+      .stream-line {
+        stroke-dasharray: 8 12;
+        animation: dashStream 25s linear infinite;
+      }
+      .stream-line-rev {
+        stroke-dasharray: 6 10;
+        animation: dashStreamRev 20s linear infinite;
+      }
+      .pill-float-1 {
+        animation: floatA 6s ease-in-out infinite alternate;
+      }
+      .pill-float-2 {
+        animation: floatB 7s ease-in-out infinite alternate;
+      }
+      .pill-float-3 {
+        animation: floatC 5.5s ease-in-out infinite alternate;
+      }
+      .sparkle {
+        animation: blink 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes dashStream {
+        to { stroke-dashoffset: -400; }
+      }
+      @keyframes dashStreamRev {
+        to { stroke-dashoffset: 400; }
+      }
+      @keyframes floatA {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-14px) rotate(2deg); }
+      }
+      @keyframes floatB {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(16px) rotate(-2deg); }
+      }
+      @keyframes floatC {
+        0% { transform: translateY(0px) scale(0.98); }
+        100% { transform: translateY(-12px) scale(1.02); }
+      }
+      @keyframes pulseGlow {
+        0% { opacity: 0.3; transform: scale(0.95); }
+        100% { opacity: 0.7; transform: scale(1.05); }
+      }
+      @keyframes blink {
+        0% { opacity: 0.2; transform: scale(0.8); }
+        50% { opacity: 0.9; transform: scale(1.15); }
+        100% { opacity: 0.2; transform: scale(0.8); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bgGradient)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <!-- Radial Glow Behind Text -->
+  <circle cx="600" cy="180" r="450" fill="url(#glowGlow)" class="bg-glow"/>
+
+  <!-- Animated Data Pipeline Flow Lines in the Background -->
+  <g opacity="0.45">
+    <path class="stream-line" d="M -50 90 Q 300 20 600 90 T 1250 80" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+    <path class="stream-line-rev" d="M -50 280 Q 300 340 600 270 T 1250 280" fill="none" stroke="#a855f7" stroke-width="2"/>
+    <path class="stream-line" d="M -50 180 Q 400 230 700 170 T 1250 210" fill="none" stroke="#10b981" stroke-width="1.8"/>
+  </g>
+
+  <!-- Floating Dynamic Tech Pills / Badges (in Background Behind Main Card) -->
+  <g class="pill-float-1" transform="translate(60, 45)">
+    <rect width="150" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.2"/>
+    <circle cx="22" cy="17" r="5" fill="#38bdf8"/>
+    <text x="36" y="22" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" font-weight="600">🧹 Auto-Clean</text>
+  </g>
+
+  <g class="pill-float-2" transform="translate(980, 50)">
+    <rect width="165" height="34" rx="17" fill="#1e293b" stroke="#818cf8" stroke-opacity="0.5" stroke-width="1.2"/>
+    <circle cx="22" cy="17" r="5" fill="#818cf8"/>
+    <text x="36" y="22" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" font-weight="600">⚡ Polars &amp; Pandas</text>
+  </g>
+
+  <g class="pill-float-3" transform="translate(80, 275)">
+    <rect width="160" height="34" rx="17" fill="#1e293b" stroke="#10b981" stroke-opacity="0.5" stroke-width="1.2"/>
+    <circle cx="22" cy="17" r="5" fill="#10b981"/>
+    <text x="36" y="22" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" font-weight="600">🎯 Deduplication</text>
+  </g>
+
+  <g class="pill-float-1" transform="translate(970, 270)">
+    <rect width="170" height="34" rx="17" fill="#1e293b" stroke="#c084fc" stroke-opacity="0.5" stroke-width="1.2"/>
+    <circle cx="22" cy="17" r="5" fill="#c084fc"/>
+    <text x="36" y="22" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="12" font-weight="600">📊 Visual Pipeline</text>
+  </g>
+
+  <!-- Sparkle Elements -->
+  <g class="sparkle" transform="translate(240, 100)">
+    <polygon points="10,0 13,7 20,10 13,13 10,20 7,13 0,10 7,7" fill="#38bdf8"/>
+  </g>
+  <g class="sparkle" transform="translate(930, 220)">
+    <polygon points="10,0 13,7 20,10 13,13 10,20 7,13 0,10 7,7" fill="#f43f5e"/>
+  </g>
+  <g class="sparkle" transform="translate(320, 250)">
+    <polygon points="8,0 10,6 16,8 10,10 8,16 6,10 0,8 6,6" fill="#10b981"/>
+  </g>
+
+  <!-- Central Content Foreground Card (Backdrop to guarantee title never gets obscured) -->
+  <g transform="translate(200, 75)">
+    <rect width="800" height="205" rx="20" fill="#0b1120" fill-opacity="0.82" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Category / Kicker Badge -->
+    <rect x="290" y="22" width="220" height="26" rx="13" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="400" y="39" text-anchor="middle" fill="#38bdf8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">DATA OPS &amp; PREPARATION</text>
+
+    <!-- Main Title -->
+    <text x="400" y="98" text-anchor="middle" fill="url(#titleGrad)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+      Self-Service Data Prep &amp; Cleaning
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="400" y="134" text-anchor="middle" fill="#e2e8f0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="15" font-weight="500">
+      Curated Visual ETL Platforms, Data Wrangling Tools &amp; Open-Source Engines
+    </text>
+
+    <!-- Secondary Line / Pillars -->
+    <text x="400" y="166" text-anchor="middle" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="400">
+      ✨ Automated Cleansing &nbsp;•&nbsp; 🔗 Entity Resolution &nbsp;•&nbsp; 🚀 High-Performance Profiling
+    </text>
+  </g>
+
+  <!-- Bottom Accent Border Line -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#titleGrad)"/>
+</svg>
