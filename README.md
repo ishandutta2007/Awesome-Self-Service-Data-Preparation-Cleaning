@@ -51,99 +51,99 @@ Commercial, cloud-hosted Self-Service Data Preparation and Cleaning platforms. T
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven data preparation, wrangling, and cleaning tools. The list below is sorted by **GitHub Stars** in descending order:
+Self-hosted, community-driven data preparation, wrangling, and cleaning tools. The list below is sorted by **GitHub_Stars** in descending order:
 
-### 1. OpenRefine [![GitHub stars](https://img.shields.io/github/stars/OpenRefine/OpenRefine?style=social&color=white)](https://github.com/OpenRefine/OpenRefine/stargazers)
+### 1. OpenRefine [![GitHub_Stars](https://img.shields.io/github/stars/OpenRefine/OpenRefine?style=social&color=white)](https://github.com/OpenRefine/OpenRefine/stargazers)
 * **Repository:** [OpenRefine/OpenRefine](https://github.com/OpenRefine/OpenRefine) 🌐
 * **Stack:** Java ☕ | **License:** BSD-3-Clause 📜
 * **Key Strengths:** The gold standard desktop tool for exploring and cleaning messy tabular data. Runs locally in your browser to maintain total privacy while offering faceted navigation, clustering algorithms for fuzzy deduplication, cell value normalization, and reconciliation with external web services and Wikidata.  
 * **Best for:** Data analysts, researchers, and journalists needing interactive, local data cleanup and entity matching without coding.
 
-### 2. Cleanlab [![GitHub stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
+### 2. Cleanlab [![GitHub_Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
 * **Repository:** [cleanlab/cleanlab](https://github.com/cleanlab/cleanlab) 🌐
 * **Stack:** Python 🐍 | **License:** AGPL-3.0 📜
 * **Key Strengths:** The leading data-centric AI library for automated dataset hygiene. Uses confident learning algorithms to automatically detect label errors, outliers, duplicate samples, and data leakage across tabular, image, text, and audio datasets.  
 * **Best for:** Machine learning engineers preparing training data and auditing datasets for data quality issues.
 
-### 3. Miller [![GitHub stars](https://img.shields.io/github/stars/johnkerl/miller?style=social&color=white)](https://github.com/johnkerl/miller/stargazers)
+### 3. Miller [![GitHub_Stars](https://img.shields.io/github/stars/johnkerl/miller?style=social&color=white)](https://github.com/johnkerl/miller/stargazers)
 * **Repository:** [johnkerl/miller](https://github.com/johnkerl/miller) 🌐
 * **Stack:** Go / C 🐹 | **License:** BSD-2-Clause 📜
 * **Key Strengths:** Like `awk`, `sed`, `cut`, `join`, and `sort` for name-indexed tabular formats including CSV, TSV, JSON, and JSON Lines. Extremely fast, lightweight, and streaming-friendly for large files that exceed memory.  
 * **Best for:** Developers, DevOps, and data engineers needing instant command-line data wrangling, reformatting, and column manipulation.
 
-### 4. Dedupe [![GitHub stars](https://img.shields.io/github/stars/dedupeio/dedupe?style=social&color=white)](https://github.com/dedupeio/dedupe/stargazers)
+### 4. Dedupe [![GitHub_Stars](https://img.shields.io/github/stars/dedupeio/dedupe?style=social&color=white)](https://github.com/dedupeio/dedupe/stargazers)
 * **Repository:** [dedupeio/dedupe](https://github.com/dedupeio/dedupe) 🌐
 * **Stack:** Python / C++ 🐍 | **License:** MIT 📜
 * **Key Strengths:** Machine learning-powered Python library that uses active learning to quickly de-duplicate datasets and find fuzzy record matches (entity resolution). Learns human similarity judgements with minimal training labels.  
 * **Best for:** Resolving customer records, inventory deduplication, and entity resolution in large address or contact databases.
 
-### 5. qsv [![GitHub stars](https://img.shields.io/github/stars/dathere/qsv?style=social&color=white)](https://github.com/dathere/qsv/stargazers)
+### 5. qsv [![GitHub_Stars](https://img.shields.io/github/stars/dathere/qsv?style=social&color=white)](https://github.com/dathere/qsv/stargazers)
 * **Repository:** [dathere/qsv](https://github.com/dathere/qsv) 🌐
 * **Stack:** Rust 🦀 | **License:** MIT / Unlicense 📜
 * **Key Strengths:** Blazing-fast CSV data-wrangling CLI toolkit written in Rust with over 50 subcommands for slicing, indexing, selecting, searching, deduplicating, validating against JSON schemas, and running frequency statistics at line-rate speed.  
 * **Best for:** Ultra-fast CLI data validation, indexing, and high-throughput tabular preprocessing.
 
-### 6. DataPrep [![GitHub stars](https://img.shields.io/github/stars/sfu-db/dataprep?style=social&color=white)](https://github.com/sfu-db/dataprep/stargazers)
+### 6. DataPrep [![GitHub_Stars](https://img.shields.io/github/stars/sfu-db/dataprep?style=social&color=white)](https://github.com/sfu-db/dataprep/stargazers)
 * **Repository:** [sfu-db/dataprep](https://github.com/sfu-db/dataprep) 🌐
 * **Stack:** Python / Dask 🐍 | **License:** Apache-2.0 📜
 * **Key Strengths:** Low-code data preparation and exploratory analysis library (`dataprep.clean`, `dataprep.eda`). Features 140+ specialized cleaning functions for validating and standardizing standard formats like email addresses, phone numbers, geographic coordinates, and URLs with unified function calls.  
 * **Best for:** Fast exploratory data analysis, column sanitization, and standardized format cleaning in Python.
 
-### 7. Skrub [![GitHub stars](https://img.shields.io/github/stars/skrub-data/skrub?style=social&color=white)](https://github.com/skrub-data/skrub)
+### 7. Skrub [![GitHub_Stars](https://img.shields.io/github/stars/skrub-data/skrub?style=social&color=white)](https://github.com/skrub-data/skrub)
 * **Repository:** [skrub-data/skrub](https://github.com/skrub-data/skrub) 🌐
 * **Stack:** Python / Scikit-Learn 🐍 | **License:** BSD-3-Clause 📜
 * **Key Strengths:** Specifically engineered to bridge raw tabular data into Scikit-Learn machine learning pipelines. Handles messy string columns, high-cardinality categorical variables, missing values, and date parsing automatically with vectorized encoders (`TableVectorizer`).  
 * **Best for:** Data scientists preparing messy tabular data directly for machine learning models.
 
-### 8. Optimus [![GitHub stars](https://img.shields.io/github/stars/hi-primus/optimus?style=social&color=white)](https://github.com/hi-primus/optimus)
+### 8. Optimus [![GitHub_Stars](https://img.shields.io/github/stars/hi-primus/optimus?style=social&color=white)](https://github.com/hi-primus/optimus)
 * **Repository:** [hi-primus/optimus](https://github.com/hi-primus/optimus) 🌐
 * **Stack:** Python / PySpark / Dask / cuDF 🐍 | **License:** Apache-2.0 📜
 * **Key Strengths:** Agile data preparation framework providing a unified, human-readable API over multiple distributed engines including Pandas, Dask, cuDF, Vaex, and PySpark. Seamlessly scales cleaning recipes from single laptops to GPU clusters.  
 * **Best for:** Teams scaling data cleaning workflows across single laptops, GPU clusters, and Apache Spark environments.
 
-### 9. PyJanitor [![GitHub stars](https://img.shields.io/github/stars/pyjanitor-devs/pyjanitor?style=social&color=white)](https://github.com/pyjanitor-devs/pyjanitor)
+### 9. PyJanitor [![GitHub_Stars](https://img.shields.io/github/stars/pyjanitor-devs/pyjanitor?style=social&color=white)](https://github.com/pyjanitor-devs/pyjanitor)
 * **Repository:** [pyjanitor-devs/pyjanitor](https://github.com/pyjanitor-devs/pyjanitor) 🌐
 * **Stack:** Python / Pandas 🐍 | **License:** MIT 📜
 * **Key Strengths:** Python port of R’s acclaimed `janitor` package. Extends Pandas DataFrames with a fluent method-chaining API for expressive cleaning routines: `df.clean_names().remove_empty().fill_empty()`.  
 * **Best for:** Python practitioners wanting clean, chained, and readable Pandas data manipulation code.
 
-### 10. Amphi ETL [![GitHub stars](https://img.shields.io/github/stars/amphi-ai/amphi-etl?style=social&color=white)](https://github.com/amphi-ai/amphi-etl)
+### 10. Amphi ETL [![GitHub_Stars](https://img.shields.io/github/stars/amphi-ai/amphi-etl?style=social&color=white)](https://github.com/amphi-ai/amphi-etl)
 * **Repository:** [amphi-ai/amphi-etl](https://github.com/amphi-ai/amphi-etl) 🌐
 * **Stack:** Python / Jupyter / TypeScript 🐍 | **License:** Apache-2.0 📜
 * **Key Strengths:** Low-code visual data preparation tool designed for Python environments and JupyterLab. Users visually drag and drop ETL pipelines, connect structured and unstructured data sources, and export pure native Python code.  
 * **Best for:** Analysts wanting visual drag-and-drop pipeline construction integrated with Python.
 
-### 11. Data Prep Kit [![GitHub stars](https://img.shields.io/github/stars/data-prep-kit/data-prep-kit?style=social&color=white)](https://github.com/data-prep-kit/data-prep-kit)
+### 11. Data Prep Kit [![GitHub_Stars](https://img.shields.io/github/stars/data-prep-kit/data-prep-kit?style=social&color=white)](https://github.com/data-prep-kit/data-prep-kit)
 * **Repository:** [data-prep-kit/data-prep-kit](https://github.com/data-prep-kit/data-prep-kit) 🌐
 * **Stack:** Python / Ray / Spark 🐍 | **License:** Apache-2.0 📜
 * **Key Strengths:** Community-driven toolkit built to scale data preparation for Large Language Models (LLMs). Provides enterprise-scale modules for PDF/document extraction, deduping, quality filtering, and language identification running on Ray or Spark.  
 * **Best for:** AI engineers preparing massive unstructured text and document datasets for generative AI pre-training and fine-tuning.
 
-### 12. Flowfile [![GitHub stars](https://img.shields.io/github/stars/Edwardvaneechoud/Flowfile?style=social&color=white)](https://github.com/Edwardvaneechoud/Flowfile)
+### 12. Flowfile [![GitHub_Stars](https://img.shields.io/github/stars/Edwardvaneechoud/Flowfile?style=social&color=white)](https://github.com/Edwardvaneechoud/Flowfile)
 * **Repository:** [Edwardvaneechoud/Flowfile](https://github.com/Edwardvaneechoud/Flowfile) 🌐
 * **Stack:** Python / Polars / Delta Lake ⚡ | **License:** Apache-2.0 📜
 * **Key Strengths:** Visual pipeline builder and data catalog powered by a Polars engine. Provides 30+ visual transformation nodes (joins, filters, fuzzy matching, pivots) and exports visual flows directly into standalone, high-performance Polars Python scripts.  
 * **Best for:** Teams seeking a self-hosted visual alternative to Alteryx with native Polars execution and zero vendor lock-in.
 
-### 13. Open Data Editor [![GitHub stars](https://img.shields.io/github/stars/okfn/opendataeditor?style=social&color=white)](https://github.com/okfn/opendataeditor)
+### 13. Open Data Editor [![GitHub_Stars](https://img.shields.io/github/stars/okfn/opendataeditor?style=social&color=white)](https://github.com/okfn/opendataeditor)
 * **Repository:** [okfn/opendataeditor](https://github.com/okfn/opendataeditor) 🌐
 * **Stack:** JavaScript / Frictionless Framework 🟨 | **License:** MIT 📜
 * **Key Strengths:** Local-first, no-code desktop application developed by the Open Knowledge Foundation. Validates, corrects, and standardizes tabular datasets offline, ensuring compliance with open data FAIR standards without data leaving the machine.  
 * **Best for:** Non-technical domain experts, NGOs, and government agencies seeking offline data validation and publication hygiene.
 
-### 14. Openclean [![GitHub stars](https://img.shields.io/github/stars/VIDA-NYU/openclean?style=social&color=white)](https://github.com/VIDA-NYU/openclean)
+### 14. Openclean [![GitHub_Stars](https://img.shields.io/github/stars/VIDA-NYU/openclean?style=social&color=white)](https://github.com/VIDA-NYU/openclean)
 * **Repository:** [VIDA-NYU/openclean](https://github.com/VIDA-NYU/openclean) 🌐
 * **Stack:** Python 🐍 | **License:** Apache-2.0 📜
 * **Key Strengths:** Modular Python library for data profiling, cleansing, and validation from NYU’s VIDA lab. Offers unified APIs for outlier detection, pattern validation, string standardization, and human-in-the-loop cleaning.  
 * **Best for:** Research and data science teams building extensible, reproducible data cleaning pipelines.
 
-### 15. Ciaren [![GitHub stars](https://img.shields.io/github/stars/ciaren-labs/Ciaren?style=social&color=white)](https://github.com/ciaren-labs/Ciaren)
+### 15. Ciaren [![GitHub_Stars](https://img.shields.io/github/stars/ciaren-labs/Ciaren?style=social&color=white)](https://github.com/ciaren-labs/Ciaren)
 * **Repository:** [ciaren-labs/Ciaren](https://github.com/ciaren-labs/Ciaren) 🌐
 * **Stack:** Python / Polars / Pandas 🐍 | **License:** MIT 📜
 * **Key Strengths:** Open-source, local-first visual ETL and data preparation builder with step-by-step data preview, data quality assertions, and automated export to clean Pandas or Polars Python code and Jupyter notebooks.  
 * **Best for:** Analysts and learners wanting visual drag-and-drop data prep that compiles cleanly into native Python.
 
-### 16. DATADOC [![GitHub stars](https://img.shields.io/github/stars/narain-karti/DATADOC?style=social&color=white)](https://github.com/narain-karti/DATADOC)
+### 16. DATADOC [![GitHub_Stars](https://img.shields.io/github/stars/narain-karti/DATADOC?style=social&color=white)](https://github.com/narain-karti/DATADOC)
 * **Repository:** [narain-karti/DATADOC](https://github.com/narain-karti/DATADOC) 🌐
 * **Stack:** Python / Polars ⚡ | **License:** MIT 📜
 * **Key Strengths:** CLI and Python engine for automated, zero-leakage dataset engineering. Built on Polars, it diagnoses missing values and outliers mathematically, isolates transformations to training splits, and exports reproducible pipeline JSON artifacts.  
@@ -184,7 +184,7 @@ Self-hosted, community-driven data preparation, wrangling, and cleaning tools. T
 Contributions are warmly welcomed! If you know of an open-source data preparation, cleaning, or wrangling tool that should be listed here:
 
 1. 🍴 Fork this repository.
-2. 📝 Add your tool to the relevant section (maintaining star count order for open source projects).
+2. 📝 Add your tool to the relevant section (maintaining Stars_Count order for open source projects).
 3. 🔎 Ensure the project is actively maintained with clear documentation.
 4. 🚀 Open a pull request explaining what the tool does and why it stands out.
 
