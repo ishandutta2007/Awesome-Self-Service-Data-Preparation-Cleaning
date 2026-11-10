@@ -1,134 +1,189 @@
-# Awesome-Self-Service-Data-Preparation-Cleaning
-
 # Awesome Self-Service Data Preparation & Cleaning
 
-> A curated list of top Self-Service Data Preparation and Cleaning platforms — both SaaS/Hosted commercial solutions and open-source alternatives for profiling, transforming, and standardizing messy data without writing code.
-> 🌟 Star this repo if you find it useful! 🌟
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+
+> A curated list of top **Self-Service Data Preparation and Cleaning** platforms, tools, and libraries — featuring visual ETL builders, no-code data wrangling interfaces, data deduplication engines, and open-source software for profiling, transforming, and standardizing messy data without writing boilerplate code.
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global data preparation and cleaning software market was valued at approximately **$5.0B – $7.6B in 2024–2025** and is projected to surpass **$26B to $54B by 2030–2035**, expanding at a robust CAGR of **18%–26%** driven by the exponential demand for AI-ready, audit-compliant training and analytical data. The sector is **moderately fragmented**: mega-cap cloud and business intelligence ecosystems (Amazon Web Services, Salesforce Tableau) anchor heavy enterprise workloads, while visual automation suites (Alteryx, Zoho) and an innovative crop of open-source dataframe and AI data-cleaning frameworks (OpenRefine, Cleanlab, Miller, qsv) capture domain-specific, privacy-first, and local-first data wrangling niches.
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Alteryx Designer Cloud](#alteryx-designer-cloud)
-  - [Tableau Prep](#tableau-prep)
-  - [AWS Glue DataBrew](#aws-glue-databrew)
-  - [Zoho DataPrep](#zoho-dataprep)
-  - [Datameer](#datameer)
 - [Open-Source Software](#-open-source-software)
-  - [OpenRefine](#openrefine)
-  - [Flowfile](#flowfile)
-  - [Ciaren](#ciaren)
-  - [DATADOC](#datadoc)
-  - [datapill](#datapill)
-  - [Open Data Editor](#open-data-editor)
-  - [Hermes](#hermes)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Self-Service Data Preparation and Cleaning platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Self-Service Data Preparation and Cleaning platforms. The table below is sorted by company size (valuation / market capitalization) in descending order:
 
-### Alteryx Designer Cloud
-**Type:** Visual data preparation and analytics automation  
-Alteryx Designer Cloud (formerly Trifacta) provides a visual, self-service interface for profiling, cleaning, and transforming data at scale. It is a long-standing enterprise standard for data preparation, with a focus on interactive exploration and automated pattern detection. Pricing is quote-based and targets enterprise analytics teams.
-
-### Tableau Prep
-**Type:** Visual data preparation within Tableau ecosystem  
-Tableau Prep provides a visual flow-based interface for cleaning, shaping, and combining data before analysis in Tableau. It is the natural choice for organizations already standardized on Tableau, with direct integration into Tableau Desktop and Server.
-
-### AWS Glue DataBrew
-**Type:** Managed visual data preparation on AWS  
-AWS Glue DataBrew provides a visual interface for cleaning and normalizing data without writing code, with 250+ pre-built transformations. It integrates natively with AWS data services (S3, Redshift, Athena) and is billed per session and data volume.
-
-### Zoho DataPrep
-**Type:** Self-service data preparation within Zoho ecosystem  
-Zoho DataPrep provides a visual interface for profiling, cleaning, and transforming data as part of the broader Zoho analytics suite. It is the natural choice for organizations already using Zoho Analytics or other Zoho products.
-
-### Datameer
-**Type:** Cloud-native data preparation for Snowflake  
-Datameer provides a SaaS data preparation platform designed specifically for Snowflake, with a spreadsheet-like interface, formula builder, and data catalog integration. It targets business users and analysts needing self-service transformation within the Snowflake ecosystem.
+| Platform | Company Valuation / Revenue | Pricing (Starting Tier) | Free Tier / Free Trial Limits | Description & Key Capabilities |
+|---|---|---|---|---|
+| **AWS Glue DataBrew** | **~$2.1T – $2.3T** Market Cap (Amazon AMZN) / ~$184B AWS Ann. Run Rate | **$1.00 per 30-min interactive session**; **$0.48 per node-hr** for batch/recipe jobs | **First 40 interactive sessions free** for first-time users; 1M Glue Data Catalog objects & requests/mo free | Cloud-native visual data preparation service with 250+ built-in transformations and automated profiling, deeply integrated with AWS S3, Redshift, and Athena without managing infrastructure. |
+| **Tableau Prep** | **~$180B – $200B** Market Cap (Salesforce CRM) / $15.7B Acq. | **$75 per user/month** (billed annually, bundled in Tableau Creator) | **14-day free trial** (Full exploratory access to Tableau Desktop, Prep Builder, and Tableau Cloud; no credit card required) | Flow-based visual data preparation tool designed to shape, clean, pivot, and combine messy data sources directly within the broader Salesforce and Tableau analytics ecosystem. |
+| **Zoho DataPrep** | **~$12.5B** Valuation (Bootstrapped) / ~$1.4B Annual Revenue | **$40 per month** (billed annually, up to 2M rows processed/mo, 3 users) | **Free forever plan**: Up to **20,000 rows processed per month** and **1 user** | Self-service data preparation and pipeline service providing automated data cleansing, rule-based transformation, and validation within the Zoho enterprise business suite. |
+| **Alteryx Designer Cloud** | **$4.4B** Acquisition Valuation / >$1B ARR | **$250 per user/month** (Starter Edition, billed annually at $3,000/user/yr, 1–10 seats) | **30-day free trial** (Full exploratory access to Alteryx One Designer Cloud for flat files and basic data prep; business email required) | Visual data profiling and analytics automation platform (formerly Trifacta) offering interactive recipe creation, pattern recognition, and workflow orchestration. |
+| **Datameer** | **~$140M – $160M** Valuation / ~$15M – $20M Annual Revenue | **~$100 per month** starting user plan (+ underlying Snowflake compute credit costs) | **14-day free trial** (Test-drive environment pushdown into Snowflake instance; no credit card required) | SaaS data transformation and preparation tool purpose-built for Snowflake, featuring a spreadsheet-like visual formula interface that compiles directly into Snowflake SQL. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Self-Service Data Preparation and Cleaning tools. The open-source ecosystem spans **visual pipeline builders**, **CLI-driven automation**, and **privacy-first local editors**.
+Self-hosted, community-driven data preparation, wrangling, and cleaning tools. The list below is sorted by **GitHub Stars** in descending order:
 
-### OpenRefine
-**Stack:** Java | **License:** BSD-3-Clause  
-OpenRefine is the most established open-source tool for working with messy data, with 12,000+ GitHub stars and active development (last commit within days as of early 2026) [citation:14]. It runs in a web browser on the user's own machine, providing privacy and comfort while loading, understanding, cleaning, reconciling, and augmenting data with web services and external data [citation:14]. A 2025 benchmark study evaluating five data cleaning tools identified OpenRefine as a primary GUI-based desktop application alongside Dedupe and Great Expectations, noting its strengths in interactive clustering and transformation [citation:2]. It is particularly strong for **value normalization** and fuzzy duplicate detection through clustering [citation:7][citation:12].  
-**Best for:** Analysts and data practitioners wanting a proven, browser-based tool for interactive data cleaning and reconciliation without writing code or sending data to a third-party cloud.
+### 1. OpenRefine [![GitHub stars](https://img.shields.io/github/stars/OpenRefine/OpenRefine?style=social&color=white)](https://github.com/OpenRefine/OpenRefine/stargazers)
+* **Repository:** [OpenRefine/OpenRefine](https://github.com/OpenRefine/OpenRefine)  
+* **Stack:** Java | **License:** BSD-3-Clause  
+* **Key Strengths:** The gold standard desktop tool for exploring and cleaning messy tabular data. Runs locally in your browser to maintain total privacy while offering faceted navigation, clustering algorithms for fuzzy deduplication, cell value normalization, and reconciliation with external web services and Wikidata.  
+* **Best for:** Data analysts, researchers, and journalists needing interactive, local data cleanup and entity matching without coding.
 
-### Flowfile
-**Stack:** Python / Polars / Delta Lake | **License:** Open Source (per project)  
-Flowfile is an open-source data platform combining a **visual pipeline builder** with a data catalog, scheduling, Kafka ingestion, and sandboxed Python execution in a single `pip install` [citation:3][citation:5]. The visual builder offers 30+ nodes for joins, filters, aggregations, fuzzy matching, and pivots, with **code generation** that exports visual flows as standalone Python/Polars scripts — so visual work never traps logic in a proprietary format [citation:3]. It includes a data catalog with Delta Lake storage, version history, and lineage tracking, plus cloud storage connectivity (S3, Azure Data Lake, GCS) and database connectors (PostgreSQL, MySQL, SQL Server, DuckDB) [citation:3][citation:5]. Deploys via desktop app, Docker Compose, or browser-based WASM demo [citation:3].  
-**Best for:** Teams wanting a self-hosted visual ETL and data prep tool with Polars performance, code export, and data catalog capabilities, without vendor lock-in.
+### 2. Cleanlab [![GitHub stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
+* **Repository:** [cleanlab/cleanlab](https://github.com/cleanlab/cleanlab)  
+* **Stack:** Python | **License:** AGPL-3.0  
+* **Key Strengths:** The leading data-centric AI library for automated dataset hygiene. Uses confident learning algorithms to automatically detect label errors, outliers, duplicate samples, and data leakage across tabular, image, text, and audio datasets.  
+* **Best for:** Machine learning engineers preparing training data and auditing datasets for data quality issues.
 
-### Ciaren
-**Stack:** Python / Polars / Pandas | **License:** Open Source (per repository)  
-Ciaren is an open-source, local-first **visual ETL and data pipeline builder** with drag-and-drop data prep, preview of every step, scheduling, and **export to clean pandas or Polars Python code** [citation:10]. It covers cleaning (drop/fill nulls, remove duplicates, rename/select/drop columns, cast types), transformation (filters, joins, group by, aggregates, calculated columns, pivots, windows), data quality assertions, and lightweight machine learning with MLflow tracking [citation:10]. Every flow exports to a standalone Python script or Jupyter notebook, making it useful for prototyping, teaching, and migrating visual exploration into normal Python projects [citation:10]. It is positioned as a lightweight, single-machine option for small and medium datasets, not a replacement for Airflow or Spark at scale [citation:10].  
-**Best for:** Data analysts and Python learners wanting a visual builder whose output is plain pandas/Polars code, with no proprietary workflow format.
+### 3. Miller [![GitHub stars](https://img.shields.io/github/stars/johnkerl/miller?style=social&color=white)](https://github.com/johnkerl/miller/stargazers)
+* **Repository:** [johnkerl/miller](https://github.com/johnkerl/miller)  
+* **Stack:** Go / C | **License:** BSD-2-Clause  
+* **Key Strengths:** Like `awk`, `sed`, `cut`, `join`, and `sort` for name-indexed tabular formats including CSV, TSV, JSON, and JSON Lines. Extremely fast, lightweight, and streaming-friendly for large files that exceed memory.  
+* **Best for:** Developers, DevOps, and data engineers needing instant command-line data wrangling, reformatting, and column manipulation.
 
-### DATADOC
-**Stack:** Python / Polars | **License:** Open Source (per PyPI)  
-DATADOC is a CLI and Python library for **automated dataset engineering and cleaning**, powered by a Polars backend [citation:4]. It analyzes raw CSV files, diagnoses missing values, outliers, and schema issues, and engineers a machine-learning-ready dataset in milliseconds. Every transformation is strictly mathematical (IQR, medians, mode) and deterministic — no black-box AI — making it safe for production [citation:4]. It exports a standalone, portable Python script to replicate the pipeline anywhere, and includes an **AI Planner and interactive Chat Assistant** for LLM-assisted engineering via tool-calling [citation:4]. CLI commands include `analyze`, `recommend`, `engineer`, `compare`, and `pipeline` [citation:4].  
-**Best for:** ML engineers and data scientists wanting automated, deterministic data cleaning with reproducible Python script export and optional AI assistance.
+### 4. Dedupe [![GitHub stars](https://img.shields.io/github/stars/dedupeio/dedupe?style=social&color=white)](https://github.com/dedupeio/dedupe/stargazers)
+* **Repository:** [dedupeio/dedupe](https://github.com/dedupeio/dedupe)  
+* **Stack:** Python / C++ | **License:** MIT  
+* **Key Strengths:** Machine learning-powered Python library that uses active learning to quickly de-duplicate datasets and find fuzzy record matches (entity resolution). Learns human similarity judgements with minimal training labels.  
+* **Best for:** Resolving customer records, inventory deduplication, and entity resolution in large address or contact databases.
 
-### datapill
-**Stack:** Python | **License:** Open Source (per PyPI)  
-datapill is a CLI-driven data preparation tool that runs **ingest + profile + transform pipelines** from JSON config files [citation:6]. It provides pre-built steps for missing values (impute mean/median/mode, drop), outliers (clip IQR/Z-score), scaling (standard, minmax, robust), encoding (onehot, ordinal), and structure (select, drop, rename, cast, deduplicate) [citation:6]. Every pipeline run produces artifacts (Parquet files and JSON metadata) stored locally with a registry, and exports to file, PostgreSQL, or S3 with write modes (replace, append, upsert) [citation:6]. Connectors cover PostgreSQL, MySQL, S3, Kafka, and REST APIs with pagination modes [citation:6].  
-**Best for:** Data engineers wanting a config-driven, CLI-based approach to repeatable data preparation with artifact tracking and database/S3 write-back.
+### 5. qsv [![GitHub stars](https://img.shields.io/github/stars/dathere/qsv?style=social&color=white)](https://github.com/dathere/qsv/stargazers)
+* **Repository:** [dathere/qsv](https://github.com/dathere/qsv)  
+* **Stack:** Rust | **License:** MIT / Unlicense  
+* **Key Strengths:** Blazing-fast CSV data-wrangling CLI toolkit written in Rust with over 50 subcommands for slicing, indexing, selecting, searching, deduplicating, validating against JSON schemas, and running frequency statistics at line-rate speed.  
+* **Best for:** Ultra-fast CLI data validation, indexing, and high-throughput tabular preprocessing.
 
-### Open Data Editor
-**Stack:** JavaScript / Frictionless Framework | **License:** Open Source (Open Knowledge Foundation)  
-Open Data Editor (ODE) is an open-source, **offline-capable tool designed for non-technical data producers** to validate, correct, and prepare structured datasets before publication [citation:8][citation:11]. It focuses on data quality and FAIR data practices, with local AI features that explain each step rather than acting as a black box, keeping sensitive data on the user's device [citation:8][citation:11]. It is built on the Frictionless Framework, ensuring open standards, and is specifically designed for low-resource and offline contexts where technical capacity and connectivity are constrained [citation:8].  
-**Best for:** Government agencies, NGOs, and non-technical users in low-resource or offline environments needing privacy-preserving data validation and cleaning.
+### 6. DataPrep [![GitHub stars](https://img.shields.io/github/stars/sfu-db/dataprep?style=social&color=white)](https://github.com/sfu-db/dataprep/stargazers)
+* **Repository:** [sfu-db/dataprep](https://github.com/sfu-db/dataprep)  
+* **Stack:** Python / Dask | **License:** Apache-2.0  
+* **Key Strengths:** Low-code data preparation and exploratory analysis library (`dataprep.clean`, `dataprep.eda`). Features 140+ specialized cleaning functions for validating and standardizing standard formats like email addresses, phone numbers, geographic coordinates, and URLs with unified function calls.  
+* **Best for:** Fast exploratory data analysis, column sanitization, and standardized format cleaning in Python.
 
-### Hermes
-**Stack:** Python / Polars / DuckDB | **License:** Open Source (Core)  
-Hermes is an open-source **data pipeline layer** that sits around existing tools (Pandas, Polars, PyArrow, DuckDB) rather than replacing them [citation:1]. It provides validation, profiling, entity resolution (connecting records that refer to the same real-world entity), dataset versioning with snapshot/diff, provenance tracking, and lineage recording [citation:1]. It is explicitly **local-first** — `pip install hermes-plt` and start working immediately, with no cloud account or proprietary storage required [citation:1]. Domain packages (Finance, Defense, Healthcare, Trade) provide specialized knowledge on top of the core engine [citation:1].  
-**Best for:** Developers building reproducible data pipelines who need provenance, lineage, and entity resolution without adopting a proprietary platform.
+### 7. Skrub [![GitHub stars](https://img.shields.io/github/stars/skrub-data/skrub?style=social&color=white)](https://github.com/skrub-data/skrub)
+* **Repository:** [skrub-data/skrub](https://github.com/skrub-data/skrub)  
+* **Stack:** Python / Scikit-Learn | **License:** BSD-3-Clause  
+* **Key Strengths:** Specifically engineered to bridge raw tabular data into Scikit-Learn machine learning pipelines. Handles messy string columns, high-cardinality categorical variables, missing values, and date parsing automatically with vectorized encoders (`TableVectorizer`).  
+* **Best for:** Data scientists preparing messy tabular data directly for machine learning models.
+
+### 8. Optimus [![GitHub stars](https://img.shields.io/github/stars/hi-primus/optimus?style=social&color=white)](https://github.com/hi-primus/optimus)
+* **Repository:** [hi-primus/optimus](https://github.com/hi-primus/optimus)  
+* **Stack:** Python / PySpark / Dask / cuDF | **License:** Apache-2.0  
+* **Key Strengths:** Agile data preparation framework providing a unified, human-readable API over multiple distributed engines including Pandas, Dask, cuDF, Vaex, and PySpark. Seamlessly scales cleaning recipes from single laptops to GPU clusters.  
+* **Best for:** Teams scaling data cleaning workflows across single laptops, GPU clusters, and Apache Spark environments.
+
+### 9. PyJanitor [![GitHub stars](https://img.shields.io/github/stars/pyjanitor-devs/pyjanitor?style=social&color=white)](https://github.com/pyjanitor-devs/pyjanitor)
+* **Repository:** [pyjanitor-devs/pyjanitor](https://github.com/pyjanitor-devs/pyjanitor)  
+* **Stack:** Python / Pandas | **License:** MIT  
+* **Key Strengths:** Python port of R’s acclaimed `janitor` package. Extends Pandas DataFrames with a fluent method-chaining API for expressive cleaning routines: `df.clean_names().remove_empty().fill_empty()`.  
+* **Best for:** Python practitioners wanting clean, chained, and readable Pandas data manipulation code.
+
+### 10. Amphi ETL [![GitHub stars](https://img.shields.io/github/stars/amphi-ai/amphi-etl?style=social&color=white)](https://github.com/amphi-ai/amphi-etl)
+* **Repository:** [amphi-ai/amphi-etl](https://github.com/amphi-ai/amphi-etl)  
+* **Stack:** Python / Jupyter / TypeScript | **License:** Apache-2.0  
+* **Key Strengths:** Low-code visual data preparation tool designed for Python environments and JupyterLab. Users visually drag and drop ETL pipelines, connect structured and unstructured data sources, and export pure native Python code.  
+* **Best for:** Analysts wanting visual drag-and-drop pipeline construction integrated with Python.
+
+### 11. Data Prep Kit [![GitHub stars](https://img.shields.io/github/stars/data-prep-kit/data-prep-kit?style=social&color=white)](https://github.com/data-prep-kit/data-prep-kit)
+* **Repository:** [data-prep-kit/data-prep-kit](https://github.com/data-prep-kit/data-prep-kit)  
+* **Stack:** Python / Ray / Spark | **License:** Apache-2.0  
+* **Key Strengths:** Community-driven toolkit built to scale data preparation for Large Language Models (LLMs). Provides enterprise-scale modules for PDF/document extraction, deduping, quality filtering, and language identification running on Ray or Spark.  
+* **Best for:** AI engineers preparing massive unstructured text and document datasets for generative AI pre-training and fine-tuning.
+
+### 12. Flowfile [![GitHub stars](https://img.shields.io/github/stars/Edwardvaneechoud/Flowfile?style=social&color=white)](https://github.com/Edwardvaneechoud/Flowfile)
+* **Repository:** [Edwardvaneechoud/Flowfile](https://github.com/Edwardvaneechoud/Flowfile)  
+* **Stack:** Python / Polars / Delta Lake | **License:** Apache-2.0  
+* **Key Strengths:** Visual pipeline builder and data catalog powered by a Polars engine. Provides 30+ visual transformation nodes (joins, filters, fuzzy matching, pivots) and exports visual flows directly into standalone, high-performance Polars Python scripts.  
+* **Best for:** Teams seeking a self-hosted visual alternative to Alteryx with native Polars execution and zero vendor lock-in.
+
+### 13. Open Data Editor [![GitHub stars](https://img.shields.io/github/stars/okfn/opendataeditor?style=social&color=white)](https://github.com/okfn/opendataeditor)
+* **Repository:** [okfn/opendataeditor](https://github.com/okfn/opendataeditor)  
+* **Stack:** JavaScript / Frictionless Framework | **License:** MIT  
+* **Key Strengths:** Local-first, no-code desktop application developed by the Open Knowledge Foundation. Validates, corrects, and standardizes tabular datasets offline, ensuring compliance with open data FAIR standards without data leaving the machine.  
+* **Best for:** Non-technical domain experts, NGOs, and government agencies seeking offline data validation and publication hygiene.
+
+### 14. Openclean [![GitHub stars](https://img.shields.io/github/stars/VIDA-NYU/openclean?style=social&color=white)](https://github.com/VIDA-NYU/openclean)
+* **Repository:** [VIDA-NYU/openclean](https://github.com/VIDA-NYU/openclean)  
+* **Stack:** Python | **License:** Apache-2.0  
+* **Key Strengths:** Modular Python library for data profiling, cleansing, and validation from NYU’s VIDA lab. Offers unified APIs for outlier detection, pattern validation, string standardization, and human-in-the-loop cleaning.  
+* **Best for:** Research and data science teams building extensible, reproducible data cleaning pipelines.
+
+### 15. Ciaren [![GitHub stars](https://img.shields.io/github/stars/ciaren-labs/Ciaren?style=social&color=white)](https://github.com/ciaren-labs/Ciaren)
+* **Repository:** [ciaren-labs/Ciaren](https://github.com/ciaren-labs/Ciaren)  
+* **Stack:** Python / Polars / Pandas | **License:** MIT  
+* **Key Strengths:** Open-source, local-first visual ETL and data preparation builder with step-by-step data preview, data quality assertions, and automated export to clean Pandas or Polars Python code and Jupyter notebooks.  
+* **Best for:** Analysts and learners wanting visual drag-and-drop data prep that compiles cleanly into native Python.
+
+### 16. DATADOC [![GitHub stars](https://img.shields.io/github/stars/narain-karti/DATADOC?style=social&color=white)](https://github.com/narain-karti/DATADOC)
+* **Repository:** [narain-karti/DATADOC](https://github.com/narain-karti/DATADOC)  
+* **Stack:** Python / Polars | **License:** MIT  
+* **Key Strengths:** CLI and Python engine for automated, zero-leakage dataset engineering. Built on Polars, it diagnoses missing values and outliers mathematically, isolates transformations to training splits, and exports reproducible pipeline JSON artifacts.  
+* **Best for:** Machine learning engineers needing automated, deterministic tabular data engineering.
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Software | License | Stack | Visual Builder | Code Export | Self-Hosted | Best For |
-|----------|---------|-------|----------------|-------------|-------------|----------|
-| **Alteryx Designer Cloud** | Proprietary | Cloud | ✅ | (Limited) | ❌ | Enterprise visual prep |
-| **Tableau Prep** | Proprietary | Cloud/Desktop | ✅ | ❌ | (Desktop) | Tableau ecosystem |
-| **AWS Glue DataBrew** | Proprietary | Cloud | ✅ | ❌ | ❌ | AWS-native prep |
-| **OpenRefine** | BSD-3-Clause | Java | ✅ (Browser) | (Operations) | ✅ (Local) | Interactive cleaning + reconciliation |
-| **Flowfile** | Open Source | Python/Polars | ✅ | ✅ Polars | ✅ | Visual ETL + catalog + lineage |
-| **Ciaren** | Open Source | Python/Polars | ✅ | ✅ Pandas/Polars | ✅ | Visual prep → plain Python |
-| **DATADOC** | Open Source | Python/Polars | ❌ (CLI) | ✅ Python script | ✅ | Automated deterministic cleaning |
-| **datapill** | Open Source | Python | ❌ (CLI) | ❌ | ✅ | Config-driven pipelines |
-| **Open Data Editor** | Open Source | JS/Frictionless | ✅ (GUI) | ❌ | ✅ (Offline) | Non-technical FAIR data |
-| **Hermes** | Open Source | Python/Polars | ❌ (Library) | ❌ | ✅ | Provenance + lineage + entity resolution |
+| Software | Model / License | Core Architecture | Visual Canvas | Script / Code Export | Execution Engine | Primary Use Case |
+|---|---|---|---|---|---|---|
+| **AWS Glue DataBrew** | Proprietary SaaS | Cloud Managed | ✅ | ❌ (Recipe JSON) | AWS Spark / Serverless | Managed cloud data prep for AWS data lakes |
+| **Tableau Prep** | Proprietary SaaS | Desktop & Cloud | ✅ | ❌ | Proprietary Engine | Visual prep for Tableau dashboards & reporting |
+| **Zoho DataPrep** | Proprietary SaaS | Cloud Managed | ✅ | ❌ | Zoho Cloud Engine | Business user data prep within Zoho suite |
+| **Alteryx Designer Cloud** | Proprietary SaaS | Cloud Managed | ✅ | (Limited) | Cloud Worker Nodes | Enterprise visual prep & analytics automation |
+| **Datameer** | Proprietary SaaS | Cloud / Snowflake | ✅ (Grid) | ✅ (Snowflake SQL) | Snowflake Pushdown | In-warehouse prep & transformation for Snowflake |
+| **OpenRefine** | BSD-3-Clause | Local Web App | ✅ (Browser) | (Operation JSON) | Java (In-Memory) | Interactive messy data cleaning & clustering |
+| **Cleanlab** | AGPL-3.0 | Library | ❌ | ✅ Python | NumPy / PyTorch / Scikit | ML dataset auditing & label error correction |
+| **Miller** | BSD-2-Clause | CLI Utility | ❌ | ❌ (Shell CLI) | Go / C (Streaming) | High-speed command-line tabular wrangling |
+| **Dedupe** | MIT | Library | ❌ | ✅ Python | Python / C++ | Machine learning entity resolution & deduplication |
+| **qsv** | MIT / Unlicense | CLI Utility | ❌ | ❌ (CLI Pipes) | Rust (Multi-threaded) | Lightning-fast CSV validation & manipulation |
+| **DataPrep** | Apache-2.0 | Library | ❌ (Notebook UI) | ✅ Python | Python / Dask | 140+ format sanitizers & exploratory analysis |
+| **Skrub** | BSD-3-Clause | Library | ❌ | ✅ Scikit-Learn | Scikit-Learn / Pandas | Vectorizing messy strings for machine learning |
+| **Optimus** | Apache-2.0 | Framework | ❌ | ✅ Python | PySpark / Dask / cuDF | Distributed & GPU-accelerated data cleaning |
+| **PyJanitor** | MIT | Library | ❌ | ✅ Pandas | Pandas | Expressive method chaining for data cleanup |
+| **Amphi ETL** | Apache-2.0 | Local / Web App | ✅ (Visual Flow) | ✅ Python Code | Python / Jupyter | Low-code visual pipeline builder with code export |
+| **Data Prep Kit** | Apache-2.0 | Framework | ❌ | ✅ Python | Ray / Spark | Unstructured document & text prep for LLMs |
+| **Flowfile** | Apache-2.0 | Local App / Web | ✅ (Visual Flow) | ✅ Polars Python | Polars / Delta Lake | Visual ETL canvas with clean Polars code export |
+| **Open Data Editor** | MIT | Desktop App | ✅ (Grid UI) | ❌ | Frictionless Framework | Offline FAIR validation for non-technical users |
+| **Openclean** | Apache-2.0 | Library | ❌ | ✅ Python | Python / Pandas | Modular data profiling & cleaning pipelines |
+| **Ciaren** | MIT | Desktop / Web | ✅ (Visual Flow) | ✅ Pandas / Polars | Polars / Pandas | Local visual builder exporting plain Python code |
+| **DATADOC** | MIT | CLI / Library | ❌ (CLI) | ✅ Python / JSON | Polars | Deterministic tabular ML data engineering |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Self-Service Data Preparation or Cleaning tool that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! If you know of an open-source data preparation, cleaning, or wrangling tool that should be listed here:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between **visual pipeline builders** (Flowfile, Ciaren), **CLI automation** (DATADOC, datapill), **interactive desktop tools** (OpenRefine), and **privacy-first editors** (Open Data Editor). **OpenRefine** is the most established option for interactive cleaning and reconciliation, with a long track record and active development [citation:14]. **Flowfile** and **Ciaren** are notable for combining visual builders with code export, avoiding proprietary workflow lock-in [citation:3][citation:10]. For automated, deterministic cleaning with script export, **DATADOC** offers a focused Polars-based solution [citation:4].
+1. Fork this repository.
+2. Add your tool to the relevant section (maintaining star count order for open source projects).
+3. Ensure the project is actively maintained with clear documentation.
+4. Open a pull request explaining what the tool does and why it stands out.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository and curated list are licensed under [Creative Commons Zero v1.0 Universal (CC0 1.0)](LICENSE). The individual software tools and libraries listed are property of their respective owners and subject to their own licenses.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **Star this repository if you found it helpful for your data workflows!** ⭐
